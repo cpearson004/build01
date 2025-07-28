@@ -1,7 +1,7 @@
 pipeline {
 agent any
 tools{
-maven 'mvn'
+maven 'my_maven'
 }
 stages {
 stage('Commit') {
