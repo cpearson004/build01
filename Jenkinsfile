@@ -26,6 +26,7 @@ sh 'mvn clean verify sonar:sonar   -Dsonar.projectKey=HelloWorld  -Dsonar.projec
 stage('Deliver') {
 steps {
 echo 'This is the delivery stage'
+sh 'cp /var/lib/jenkins/workspace/CICDPipeline/target/HelloWorld-0.0.1.jar /home/student/Documents/deploy01'
 }
 }
 }
